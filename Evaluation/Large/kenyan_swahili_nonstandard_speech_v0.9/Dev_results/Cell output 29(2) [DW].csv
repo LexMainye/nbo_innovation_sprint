@@ -1,0 +1,8 @@
+,wer,wer,wer,wer,cer,cer,cer,cer
+,mean,mean,count,count,mean,mean,count,count
+,mean,count,mean,count,mean,count,mean,count
+etiology,,,,,,,,
+Cerebral Palsy,0.76,2,49.5,2,0.27,2,49.5,2
+Multiple Sclerosis (MS),0.4,1,16.0,1,0.1,1,16.0,1
+Neurological disorder,0.63,2,41.5,2,0.37,2,41.5,2
+Parkinson’s Disease,0.75,1,74.0,1,0.3,1,74.0,1
