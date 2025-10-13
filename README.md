@@ -1,7 +1,7 @@
 
-# Fine-tuning Whisper for Non-Standard Kenyan English and Swahili
+# Fine-tuning Whisper for Non-Standard Kenyan English and Swahili 🇰🇪
 
-This project is dedicated to fine-tuning, evaluating, and running inference on non-standard speech datasets for Kenyan  English and Swahili 🇰🇪 .The primary goal is to develop a fine-tuned model that better understands non-standard speech, achieving a lower Character Error Rate (CER) and Word Error Rate (WER).
+This project is dedicated to fine-tuning, evaluating, and running inference on non-standard speech datasets for Kenyan  English and Swahili .The primary goal is to develop a fine-tuned model that better understands non-standard speech, achieving a lower Character Error Rate (CER) and Word Error Rate (WER).
 
 ## Project Structure
 
