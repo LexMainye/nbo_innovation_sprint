@@ -11,3 +11,13 @@ The repository is organized into the following directories:
 - **Evaluation**: Includes the notebooks for evaluating the performance of different models on the datasets. This is where you can find the results of my experiments and comparisons between various results for each whisper model.
 - **Finetuning**: This directory holds the code for fine-tuning the Whisper models. It includes the jupyter notebook for accessing  the data, setting up the training process, and running the fine-tuning jobs.
 - **Inference**: Here, you will find the notebook for running inference & results.
+
+
+## Contact Details
+
+For any questions, collaborations, or feedback, please feel free to reach out:
+
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sheldonmainye@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-mainye-745283148/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/LexMainye)
+[![X](https://img.shields.io/badge/-X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/Alekii_111)
