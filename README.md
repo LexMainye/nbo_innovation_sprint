@@ -19,5 +19,5 @@ For any questions, collaborations, or feedback, please feel free to reach out:
 
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sheldonmainye@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-mainye-745283148/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/LexMainye)
+[![Signal](https://img.shields.io/badge/-Signal-3A76F0?style=flat-square&logo=signal&logoColor=white)](https://signal.me/#u/[Lex.71])
 [![X](https://img.shields.io/badge/-X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/Alekii_111)
