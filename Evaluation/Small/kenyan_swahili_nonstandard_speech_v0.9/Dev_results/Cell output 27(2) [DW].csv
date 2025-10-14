@@ -1,7 +1,0 @@
-,wer,wer,wer,wer,cer,cer,cer,cer
-,mean,mean,count,count,mean,mean,count,count
-,mean,count,mean,count,mean,count,mean,count
-severity,,,,,,,,
-mild,0.88,2,19.5,2,0.35,2,19.5,2
-moderate,0.9,2,42.0,2,0.46,2,42.0,2
-severe,0.95,2,74.5,2,0.55,2,74.5,2

@@ -1,9 +1,0 @@
-,,,wer,wer,cer,cer
-,,,mean,count,mean,count
-speaker_id,severity,etiology,,,,
-KES006,mild,Cerebral Palsy,0.22,50,0.11,50
-KES018,mild,Multiple Sclerosis (MS),0.19,94,0.11,94
-KES005,moderate,Neurological disorder,0.24,10,0.16,10
-KES020,moderate,Parkinson’s Disease,0.34,60,0.22,60
-KES004,severe,Neurological disorder,0.23,54,0.15,54
-KES007,severe,Cerebral Palsy,0.42,74,0.24,74
