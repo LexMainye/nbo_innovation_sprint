@@ -20,8 +20,8 @@ This project is proudly associated with the following **partner organisations**:
 
 This project leverages the following key technologies for experimentation, model fine-tuning, and deployment:
 
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Modal](https://img.shields.io/badge/Modal-4741E1?style=for-the-badge&logo=modal&logoColor=white)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Modal](https://img.shields.io/badge/Modal-4741E1?style=for-the-badge&logo=modal&logoColor=white)](https://modal.com/)
 
 
 ---
