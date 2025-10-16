@@ -12,16 +12,19 @@ This project is proudly associated with the following **partner organisations**:
 * [Centre for Digital Language Inclusion](https://cdl-inclusion.com/)
 * [Senses Hub](https://senseshub.vision/)
 * [iLabAfrica at Strathmore University](https://ilabafrica.strathmore.edu/)
+* [University of College London](https://www.ucl.ac.uk/)
 
 
 ---
 
 ## Technologies Used 🛠️
 
-This project leverages the following key technologies for experimentation, model fine-tuning, and deployment:
+This project leverages the following key technologies:
 
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Modal](https://img.shields.io/badge/Modal-4741E1?style=for-the-badge&logo=modal&logoColor=white)](https://modal.com/)
+[![Modal](https://img.shields.io/badge/Modal-22c55e?style=for-the-badge&logo=modal&logoColor=white)](https://modal.com/)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
 
 ---
