@@ -25,6 +25,7 @@ This project leverages the following key technologies:
 
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![Modal](https://img.shields.io/badge/Modal-22c55e?style=for-the-badge&logo=modal&logoColor=white)](https://modal.com/)
+[![TensorBoard](https://img.shields.io/badge/TensorBoard-FF6D00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/tensorboard)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
