@@ -12,7 +12,7 @@ This project is proudly associated with the following **partner organisations**:
 * [Centre for Digital Language Inclusion](https://cdl-inclusion.com/)
 * [Senses Hub](https://senseshub.vision/)
 * [iLabAfrica at Strathmore University](https://ilabafrica.strathmore.edu/)
-* [University of College London](https://www.ucl.ac.uk/)
+* [University College London](https://www.ucl.ac.uk/)
 
 
 ---
@@ -41,7 +41,7 @@ The repository is organized into the following directories:
 ----
 ## Contact Details
 
-For any questions, collaborations, or feedback, please feel free to reach out:
+For any questions or feedback, please feel free to reach out:
 
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sheldonmainye@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-mainye-745283148/)
