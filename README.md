@@ -11,10 +11,10 @@ This project is dedicated to fine-tuning, evaluating, and running inference on n
 
 This project is proudly associated with the following **partner organisations**:
 
-* [Centre for Digital Language Inclusion](https://cdl-inclusion.com/)
-* [Senses Hub](https://senseshub.vision/)
-* [iLabAfrica at Strathmore University](https://ilabafrica.strathmore.edu/)
-* [University College London](https://www.ucl.ac.uk/)
+* [Centre for Digital Language Inclusion](https://cdl-inclusion.com/)🌐
+* [Senses Hub](https://senseshub.vision/)🇰🇪
+* [iLabAfrica at Strathmore University](https://ilabafrica.strathmore.edu/)🇰🇪
+* [University College London](https://www.ucl.ac.uk/)🇬🇧
 
 
 ---
