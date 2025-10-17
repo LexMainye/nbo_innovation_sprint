@@ -137,23 +137,3 @@ This summary is based on the evaluation of **705 examples**.
 **Conclusion:**
 
 The `whisper-large-v3` model provides a strong baseline for transcribing non-standard **Kenyan English**, with an overall WER of 13.1%. However, its performance on non-standard **Kenyan Swahili** is very poor (49% WER), indicating that the model is not suitable for this task without significant fine-tuning on Swahili data. The results also show that performance can vary greatly between individual speakers, even within the same severity category.
-
-### Recommendations
-
-Based on these results, here are my recommendations for improving the models:
-
-**For Swahili:**
-
-The performance on the Swahili dataset is currently very poor (49% WER), so my priority would be to improve the base model's understanding of Swahili.
-
-*   **Swahili-Specific Finetuning:** My most important recommendation is to finetune the `whisper-large-v3` model on a large, diverse dataset of **standard Swahili speech** before even attempting to finetune on the non-standard speech data. The model's high error rate suggests it lacks a fundamental understanding of Swahili phonetics, grammar, and vocabulary. A good starting point would be to use datasets like Common Voice for Swahili.
-*   **Data Augmentation:** For the non-standard Swahili data, I would recommend using data augmentation techniques to increase the size of the training dataset. This could include techniques like changing the speed of the audio, adding background noise, or using SpecAugment.
-*   **Targeted Finetuning:** Once the model has a better grasp of standard Swahili, I would recommend a second stage of finetuning on the non-standard Swahili dataset. Given the high variability between speakers, it might be beneficial to experiment with speaker-adaptive finetuning if more data per speaker becomes available.
-
-**For English:**
-
-The model is already performing well on the English dataset (13.1% WER), so my focus here would be on reducing the error rate for the more challenging speakers.
-
-*   **Finetuning on Non-Standard Speech:** While the base model is strong, finetuning it on the non-standard English speech dataset will likely improve its performance, especially for speakers with higher error rates like `KES028`.
-*   **Focus on Challenging Speakers:** When finetuning, I would recommend oversampling the data from speakers with the highest WER. This will encourage the model to learn the specific speech patterns of these more challenging speakers.
-*   **Analyze Errors:** I would recommend a deeper analysis of the errors for the English predictions. Are the errors concentrated on specific words or phonetic patterns? This analysis could inform further data collection or augmentation strategies. For example, if the model is consistently miss-transcribing certain words, I could add more examples of these words to the training data.
