@@ -109,23 +109,3 @@ The development set results show a clearer trend than the test set. For both Eng
 
 *   **English vs. Swahili:** Similar to the test set, the model performs much better on English than on Swahili. The WER for English is around 19.4%, while for Swahili it's a very high 72.1%.
 *   **Best and Worst Performance:** For both languages, the speaker with Multiple Sclerosis (`KES018`) has the lowest error rates, and speakers with Cerebral Palsy and Parkinson's Disease have the highest.
-
-### Recommendations
-
-Based on these development set results, here are my recommendations for improving the models:
-
-**For Swahili:**
-
-The performance on the Swahili dev set, while better than the `small` model, is still very poor. My recommendations are therefore similar to the ones for the test set, with a strong emphasis on foundational model training.
-
-*   **Foundation in Standard Swahili:** My top priority must be to give the model a solid foundation in standard Swahili. I will finetune the `whisper-large-v3` model on a large corpus of standard Swahili, like Common Voice. This is the only way to address the high WER and CER.
-*   **Two-Stage Finetuning:** After the initial finetuning on standard Swahili, I will perform a second stage of finetuning on the non-standard Swahili data. This will allow the model to adapt to the specific nuances of dysarthric speech.
-*   **Language Model Integration:** Given the high WER, integrating a Swahili language model during decoding is crucial. This will help to correct grammatical errors and improve the overall readability of the transcriptions.
-
-**For English:**
-
-The English dev set results show a clear correlation between severity and error rate. My recommendations are focused on improving the model's performance on the more severe cases.
-
-*   **Targeted Finetuning:** I will finetune the `whisper-large-v3` model on the English non-standard speech dataset. I will experiment with oversampling the data from the `severe` and `moderate` speakers to encourage the model to learn from the more challenging examples.
-*   **Error Analysis:** I will perform a detailed error analysis on the predictions from the dev set. I want to understand the types of errors the model is making on the high-WER speakers. This will help me to devise more targeted data augmentation and finetuning strategies.
-*   **Data Augmentation:** I will apply data augmentation techniques to the training data, focusing on creating variations that mimic the characteristics of the more severe speech impairments.
