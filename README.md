@@ -19,11 +19,7 @@ This project is proudly associated with the following **partner organisations**:
 
 ---
 
-## Technologies Used 🛠️
-
-This project leverages the following key technologies:
-
-# Technology Stack
+# Technology Stack 🛠️
 
 | Category | Technologies |
 | :--- | :--- |
@@ -32,7 +28,6 @@ This project leverages the following key technologies:
 | **Infrastructure** | [![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone) |
 | **Development Tools** | [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/) [![TensorBoard](https://img.shields.io/badge/TensorBoard-FF6D00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/tensorboard) [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/) |
 | **Documentation** | [![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdownguide.org/) |
-
 
 ---
 
