@@ -27,7 +27,6 @@ This project leverages the following key technologies:
 
 | Category | Technologies |
 | :--- | :--- |
-| **Core Framework** | [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org) [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io) |
 | **Language** | [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org) [![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) |
 | **Data & Models** | [![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/) [![Modal](https://img.shields.io/badge/Modal-22C55E?style=for-the-badge&logo=modal&logoColor=white)](https://modal.com) |
 | **Infrastructure** | [![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone) |
@@ -50,8 +49,4 @@ The repository is organized into the following directories:
 ## Contact Details
 
 For any questions or feedback, please feel free to reach out:
-
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sheldonmainye@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-mainye-745283148/)
-[![Signal](https://img.shields.io/badge/-Signal-3A76F0?style=flat-square&logo=signal&logoColor=white)](https://signal.me/#u/[Lex.71])
-[![X](https://img.shields.io/badge/-X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/Alekii_111)
+[![Linktree](https://img.shields.io/badge/-Linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/mainye)
