@@ -88,21 +88,3 @@ The `whisper-small` model shows a dramatic difference in performance between the
 *   **Swahili:** The model has completely failed on the Swahili development set. A WER of ~99% means that it is not transcribing the language correctly at all. This is likely due to the lack of Swahili data in the model's pre-training.
 *   **English:** The performance on the English development set is much better, with a WER of around 30%. While this is still a high error rate, it shows that the model has a foundational understanding of English. The error rates increase with severity, and there is significant variability between speakers.
 
-### Recommendations
-
-Based on these results, here are my recommendations for the `whisper-small` model:
-
-**For Swahili:**
-
-The model is not usable for Swahili in its current state. My recommendations are focused on building a model from a better starting point.
-
-*   **Abandon `whisper-small` for Swahili:** I do not recommend using `whisper-small` for Swahili. The performance is so poor that it would be more effective to start with a larger model like `whisper-large-v3`, which has better multilingual capabilities.
-*   **Start with another Multilingual Model:** If I were to continue with a small model, I would need to choose one that has been specifically pre-trained on Swahili or a wide range of languages including Swahili.
-
-**For English:**
-
-The `whisper-small` model provides a reasonable baseline for English, but it needs significant improvement.
-
-*   **Finetuning is Essential:** My primary recommendation is to finetune the `whisper-small` model on the English non-standard speech dataset. This is the most direct way to improve its performance.
-*   **Focus on Data Quality and Augmentation:** I would focus on cleaning the training data and applying data augmentation techniques to create more training examples. This will help the model to generalize better to the different speakers and severities.
-*   **Consider a Larger Model:** While finetuning will help, the results from the `large` model show that model size is a critical factor for this task. If resources permit, I would recommend moving to the `whisper-large-v3` model for English as well, as it provides a much stronger starting point.
