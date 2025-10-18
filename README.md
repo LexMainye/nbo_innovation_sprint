@@ -15,6 +15,7 @@ This project is proudly associated with the following **partner organisations**:
 * [Senses Hub](https://senseshub.vision/) 🇰🇪
 * [iLabAfrica at Strathmore University](https://ilabafrica.strathmore.edu/) 🇰🇪
 * [University College London](https://www.ucl.ac.uk/) 🇬🇧
+* [Global Disability Innovation Hub](https://www.disabilityinnovation.com/) 🇬🇧
 
 
 ---
