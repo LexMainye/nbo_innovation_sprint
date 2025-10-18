@@ -9,7 +9,7 @@ This project is dedicated to fine-tuning, evaluating, and running inference on n
 
 ## Associated Organisations 🤝
 
-This project is proudly associated with the following **partner organisations**:
+This project is associated with the following **partner organisations**:
 
 * [Centre for Digital Language Inclusion](https://cdl-inclusion.com/) 🌐
 * [Senses Hub](https://senseshub.vision/) 🇰🇪
