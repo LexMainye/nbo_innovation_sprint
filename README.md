@@ -1,5 +1,5 @@
 
-# Fine-tuning Whisper for Non-Standard Kenyan English and Swahili 🇰🇪
+# Fine-tuning Whisper for Non-Standard Kenyan English and Swahili
 
 ![In Progress](https://img.shields.io/badge/Status-In%20Progress-green?style=for-the-badge&logo=wrench&logoColor=white)
 
@@ -28,8 +28,7 @@ This project is associated with the following **partner organisations**:
 | **Data & Models** | [![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/) [![Modal](https://img.shields.io/badge/Modal-22C55E?style=for-the-badge&logo=modal&logoColor=white)](https://modal.com) |
 | **Infrastructure** | [![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone) |
 | **Development Tools** | [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/) [![TensorBoard](https://img.shields.io/badge/TensorBoard-FF6D00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/tensorboard) [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/) |
-| **Documentation** | [![Markdown](https://img.shields.io/badge/Markdown-F37626?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdownguide.org/) |
-
+| **Documentation** | [![Markdown](https://img.shields.io/badge/Markdown-F37626?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdownguide.org/) [![TSV](https://img.shields.io/badge/TSV-1572B6?style=for-the-badge&logo=tabler&logoColor=white)](https://en.wikipedia.org/wiki/Tab-separated_values) |
 ---
 
 ## Project Structure
@@ -42,7 +41,7 @@ The repository is organized into the following directories:
 - **Inference**: Here, you will find the notebook for running inference & results.
 - **Papers** :These are the papers that I've used as reference in my research paper related to this GitHub Repository.
 
-- 📒 Forked repository used for modal tooling:[Centre for Digital Language Inclusion Modal Tooling Repository](https://github.com/cdl-inclusion/modal_tooling)
+- 📒 Forked repository used for modal tooling:  [Centre for Digital Language Inclusion Modal Tooling Repository](https://github.com/cdl-inclusion/modal_tooling)
 
 ----
 ## Contact Details
