@@ -119,10 +119,6 @@ This summary is based on the evaluation of **705 examples**.
 
 ### Explanation of Results
 
-**What are WER and CER?**
-
-*   **Word Error Rate (WER):** This is a standard metric for measuring the performance of a speech recognition system. It calculates the number of errors (substitutions, deletions, and insertions) between the predicted text and the ground truth, divided by the total number of words in the ground truth. A lower WER is better.
-*   **Character Error Rate (CER):** Similar to WER, but it calculates errors at the character level instead of the word level. This can be a more granular metric, especially for languages with complex morphology.
 
 **Analysis of the `whisper-large-v3` Model's Performance:**
 
