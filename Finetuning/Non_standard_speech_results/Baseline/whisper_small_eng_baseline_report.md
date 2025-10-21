@@ -1,25 +1,23 @@
-# Report: Fine-tuning the Whisper-Small Model on Non-Standard Kenyan English
+# Baseline Report: Fine-tuning the Whisper-Small Model on Non-Standard Kenyan English
 
-This report details the process and results of fine-tuning the `openai/whisper-small` model for automatic speech recognition (ASR) on the `cdli/kenyan_english_nonstandard_speech_v0.9` dataset.
+*This report documents my initial baseline experiment and establishes a starting point for future improvements.*
 
 ## 1. Objective
 
-The primary objective of this experiment was to adapt a pre-trained Whisper model to improve its transcription accuracy on non-standard Kenyan English, a dialect often underrepresented in standard ASR training data.
+The primary objective of this **baseline experiment** was to establish an initial proof-of-concept for adapting a pre-trained Whisper model to improve transcription accuracy on non-standard Kenyan English. This serves as my foundation for more sophisticated fine-tuning approaches in future iterations.
 
 ## 2. Methodology
 
 ### 2.1. The Model: Whisper-Small
 
-I chose the `openai/whisper-small` model as the foundation for this task. It offers a good balance between performance and computational requirements. Here are some of its key characteristics:
+I selected `openai/whisper-small` as my starting point for this baseline test, prioritizing computational efficiency for initial experimentation.
 
 *   **Total Parameters:** 241,734,912
-*   **Trainable Parameters (in this experiment):** 127,986,432
+*   **Trainable Parameters (in this baseline):** 127,986,432
 
 ### 2.2. The Dataset: Non-Standard Kenyan English Speech
 
-I used the `cdli/kenyan_english_nonstandard_speech_v0.9` dataset from the Hugging Face Hub. The dataset is split into training, validation, and test sets.
-
-Because the Whisper model is pre-trained on audio segments of 30 seconds or less, I filtered the dataset accordingly. The table below shows the number of samples before and after filtering:
+The `cdli/kenyan_english_nonstandard_speech_v0.9` dataset was filtered to match Whisper's 30-second input constraint:
 
 | Split      | Original Size | Filtered Size (<= 30s) |
 |------------|---------------|------------------------|
@@ -27,13 +25,13 @@ Because the Whisper model is pre-trained on audio segments of 30 seconds or less
 | Validation | 572           | 342                    |
 | Test       | 993           | 705                    |
 
-### 2.3. Fine-Tuning Strategy
+### 2.3. Baseline Fine-Tuning Strategy
 
-My fine-tuning approach involved the following key decisions:
+For this initial approach, I implemented a conservative fine-tuning strategy:
 
-*   **Partial Fine-tuning:** To retain the strong language modeling capabilities of the pre-trained decoder, I chose to freeze its weights. I only trained the **encoder** and the **projection layer**, which are more directly involved in learning the acoustic features of the input audio.
-*   **Data Augmentation (SpecAugment):** I used SpecAugment to create more robust acoustic representations. This technique randomly masks parts of the audio in the frequency and time domains, which helps the model generalize better.
-*   **Hyperparameters:** The training was configured with the following hyperparameters:
+*   **Partial Fine-tuning:** I froze the decoder weights to preserve language modeling capabilities, training only the **encoder** and **projection layer**
+*   **Basic Data Augmentation:** Used SpecAugment as a starting point for robustness
+*   **Initial Hyperparameters:** These represent my first configuration attempt and will be optimized in future work:
     *   **Learning Rate:** 1e-4
     *   **LR Scheduler:** Polynomial decay
     *   **Warmup Steps:** 50
@@ -41,13 +39,13 @@ My fine-tuning approach involved the following key decisions:
     *   **Max Steps:** 1000
     *   **Epochs:** 10
 
-## 3. Results
+## 3. Baseline Results
 
-### 3.1. Training Progress
+### 3.1. Complete Training Progress
 
-The model was trained for 1000 steps. The validation Word Error Rate (WER) and Character Error Rate (CER) were monitored throughout the process.
+The model was trained for 1000 steps with detailed monitoring throughout the process. The table below shows the complete training progression:
 
-| Step | Training Loss | Validation Loss | Wer      | Cer      |
+| Step | Training Loss | Validation Loss | WER      | CER      |
 |------|---------------|-----------------|----------|----------|
 | 0    | No log        | 1.424880        | 0.278409 | 0.166156 |
 | 50   | 0.935700      | 0.737602        | 0.216053 | 0.123037 |
@@ -71,9 +69,15 @@ The model was trained for 1000 steps. The validation Word Error Rate (WER) and C
 | 950  | 0.148300      | 0.674431        | 0.184282 | 0.105735 |
 | 1000 | 0.170000      | 0.674457        | 0.185004 | 0.105964 |
 
-### 3.2. Final Evaluation
+### Key Training Observations:
+- **Rapid initial improvement**: WER dropped from 27.8% to 18.2% in the first 300 steps
+- **Stabilization phase**: Performance plateaued around step 500, suggesting potential for better convergence strategies
+- **Best validation WER**: 18.0% achieved at step 500
+- **Training loss continued decreasing** while validation metrics stabilized, indicating potential for improved regularization
 
-After training, the model with the best validation WER was loaded for a final evaluation on the development (validation) and test sets.
+### 3.2. Final Baseline Evaluation
+
+After training, the model with the best validation WER was loaded for final evaluation:
 
 **Development Set:**
 - **Loss:** 0.666
@@ -85,11 +89,40 @@ After training, the model with the best validation WER was loaded for a final ev
 - **WER:** 0.123
 - **CER:** 0.065
 
-## 4. Deployment
+## 4. Current Deployment
 
-The fine-tuned model and its tokenizer have been uploaded to the Hugging Face Hub. They are publicly available at:
+This baseline model is available as a starting point for the community:
 [smainye/eng_finetunned_tune_whisper_small_model_baseline](https://huggingface.co/smainye/eng_finetunned_tune_whisper_small_model_baseline)
 
-## 5. Conclusion
+## 5. Conclusion & Future Directions
 
-The experiment successfully demonstrated that fine-tuning the Whisper-small model on a specific dialect can lead to significant improvements in transcription accuracy. The final model achieved a WER of 12.3% on the test set, which is a strong result. The model is now available on the Hugging Face Hub for broader use.
+This baseline experiment successfully demonstrates that even with conservative fine-tuning, significant improvements can be achieved for Kenyan English transcription. The test set WER of 12.3% provides a solid foundation, but I consider this just the beginning.
+
+### Key Limitations of This Baseline:
+- Suboptimal convergence in later training stages
+- Conservative approach with frozen decoder
+- Limited hyperparameter exploration
+- Basic data augmentation strategy
+- Training plateau after step 500 suggests need for better optimization
+
+### Planned Improvements:
+I'm actively working on the following enhancements:
+- **Full model fine-tuning** (unfreezing decoder)
+- **Advanced hyperparameter optimization** with learning rate scheduling
+- **More sophisticated data augmentation** techniques
+- **Larger model variants** (Whisper-medium/large)
+- **Early stopping** strategies to prevent plateauing
+- **Cross-validation** for more robust evaluation
+- **Ensemble methods** and **transfer learning** from other dialects
+
+### Training Insights for Future Work:
+The complete training table reveals several opportunities:
+- Earlier learning rate adjustments could improve convergence
+- Additional regularization might help with the validation loss plateau
+- The gap between training and validation metrics suggests room for better generalization techniques
+
+This baseline model serves as a reproducible starting point and performance benchmark. I welcome community feedback and collaboration to build upon these initial results.
+
+---
+
+*This report documents my initial baseline findings. I'm committed to iterating and improving upon these results in subsequent versions.*
