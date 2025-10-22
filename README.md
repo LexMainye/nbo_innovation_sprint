@@ -48,7 +48,7 @@ The repository is organized into the following directories:
 
 **🤗 Hugging Face Repository:** [smainye/models](https://huggingface.co/smainye/models)
 
-Contains fine-tuned the models that I intend to use for:
+Contains fine-tuned models that I intend to use for:
   - Baseline analysis
   - Endline analysis
 
