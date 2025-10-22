@@ -1,5 +1,5 @@
 
-# Fine-tuning Whisper for Non-Standard Kenyan English and Swahili
+# Fine-tuning Whisper for Non-Standard English and Swahili
 
 ![In Progress](https://img.shields.io/badge/Status-In%20Progress-green?style=for-the-badge&logo=wrench&logoColor=white)
 
