@@ -91,7 +91,7 @@ After training, the model with the best validation WER was loaded for final eval
 
 ## 4. Current Deployment
 
-This baseline model is available as a starting point for the community:
+This baseline model is available as a starting point for the modelling research:
 [smainye/eng_finetunned_tune_whisper_small_model_baseline](https://huggingface.co/smainye/eng_finetunned_tune_whisper_small_model_baseline)
 
 ## 5. Conclusion & Future Directions
