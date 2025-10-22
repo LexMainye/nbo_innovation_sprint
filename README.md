@@ -44,6 +44,15 @@ The repository is organized into the following directories:
 - 📒 Forked repository used for modal tooling:  [Centre for Digital Language Inclusion Modal Tooling Repository](https://github.com/cdl-inclusion/modal_tooling)
 
 ----
+## Models
+
+**🤗 Hugging Face Repository:** [smainye/models](https://huggingface.co/smainye/models)
+
+Contains fine-tuned the models that I intend to use for:
+  - Baseline analysis
+  - Endline analysis
+
+----
 ## Contact Details
 
 For any questions or feedback, please feel free to reach out:
