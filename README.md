@@ -5,7 +5,7 @@
 
 [![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-smainye%2Fmodels-yellow?logo=huggingface)](https://huggingface.co/smainye/models)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=LexMainye/nbo_innovation_sprint)
+
 
 This project is dedicated to fine-tuning, evaluating, and running inference on non-standard speech datasets for Kenyan English and Swahili on open ai whisper-tiny, whisper-small & whisper-large-v3 models.The primary goal is to develop a fine-tuned model that better understands non-standard speech for Kenyan English and Swahili, achieving a lower Character Error Rate (CER) and Word Error Rate (WER).
 
