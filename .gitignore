@@ -1,5 +1,3 @@
-# Ignore my LaTeX paper
-Research_paper.tex
-# Ignore the bibliography file
-references.bib
 
+#ignore system files
+**/.DS_Store
