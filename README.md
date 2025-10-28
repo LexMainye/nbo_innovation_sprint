@@ -35,10 +35,10 @@ This project is associated with the following **partner organisations**:
 
 The repository is organized into the following directories:
 
-- **Dataset Access**: Contains the Jupyter notebooks  accessing and downloading the non-standard speech dataset.
-- **Evaluation**: Includes the notebooks for evaluating the performance of different models on the datasets. This is where you can find the results of my experiments and comparisons between various results for each whisper model.
-- **Finetuning**: This directory holds the code for fine-tuning the Whisper models. It includes the jupyter notebook for accessing  the data, setting up the training process, and running the fine-tuning jobs.
-- **Inference**: Here, you will find the notebook for running inference & results.
+- **Dataset Access**: Contains the Jupyter notebooks  accessing and downloading the non-standard speech dataset hosted by [Centre for Digital Language Inclusion](https://cdl-inclusion.com/) 🌐.
+- **Evaluation**: Includes the jupyter notebooks for evaluating the performance of different models on the datasets. This is where you can find the results of my experiments and comparisons between various results for each whisper model.
+- **Finetuning**: This directory holds the jupyter notebook used for fine-tuning the Whisper models. It includes the jupyter notebook for accessing  the data, setting up the training process, and running the fine-tuning jobs.
+- **Inference**: Here, you will find the Jupyter notebook for running inference & results.
 
 - 📒 Forked repository used for modal tooling:  [Centre for Digital Language Inclusion Modal Tooling Repository](https://github.com/cdl-inclusion/modal_tooling)
 
@@ -47,6 +47,4 @@ The repository is organized into the following directories:
 
 **🤗 Hugging Face Repository:** [smainye/models](https://huggingface.co/smainye/models)
 
-Contains fine-tuned models that I intend to use for:
-  - Baseline analysis
-  - Endline analysis
+Where the fine-tuned models I've worked on will be stored.
