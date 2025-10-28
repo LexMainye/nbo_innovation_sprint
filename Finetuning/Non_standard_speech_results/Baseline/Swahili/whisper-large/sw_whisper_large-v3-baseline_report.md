@@ -69,21 +69,16 @@ Training Observations: The model shows consistent improvement until step 700, af
 - **WER:** 0.270
 - **CER:** 0.105
 
-## 5. Model Availability
-
-The fine-tuned model is publicly available on the Hugging Face Hub:
-- Model: [smainye/sw_finetunned_whisper_large_v3_model_baseline](https://huggingface.co/smainye/sw_finetunned_whisper_large_v3_model_baseline)
-
-## 6. Technical Notes
+## 5. Technical Notes
 
 - Training utilized gradient checkpointing for memory efficiency
 - Best model selection based on WER & CER metric
 - Training completed with model checkpoints saved every 50 steps
 - Used polynomial learning rate decay with warmup (50 steps)
 
-## 7. Recommended next steps
+## 6. Recommended next steps
 
-1. Hyperparameter Optimization
+**1. Hyperparameter Optimization**
 
 - Conduct comprehensive learning rate sweep (1e-6 to 1e-4)
 
@@ -93,7 +88,7 @@ The fine-tuned model is publicly available on the Hugging Face Hub:
 
 - Optimize warmup steps and decay parameters
 
-2. Dataset Analysis & Enhancement
+**2. Dataset Analysis & Enhancement**
 - Perform detailed error analysis on high-WER samples from the **non-standard Swahili speech data**.
 
 - Implement audio data augmentation:
@@ -106,7 +101,7 @@ The fine-tuned model is publicly available on the Hugging Face Hub:
 
 - Review and optimize 30-second filtering criteria
 
-3. Model Configuration Experiments
+**3. Model Configuration Experiments**
 - Enable decoder fine-tuning for end-to-end comparison
 
 - Test progressive unfreezing of encoder layers

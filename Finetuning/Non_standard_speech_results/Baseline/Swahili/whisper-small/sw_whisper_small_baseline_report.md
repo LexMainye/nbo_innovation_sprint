@@ -93,9 +93,3 @@ The final model was evaluated on the validation (dev) and test sets. The best pe
 - **Evaluation Loss:** 0.7671
 - **WER:** 0.3135
 - **CER:** 0.1218
-
-## 6. Model Artifacts
-
-The best model checkpoint from the training run was saved locally and pushed to the Hugging Face Hub.
-
-- **Hugging Face Hub:** [smainye/sw_finetunned_tune_whisper_small_model_baseline](https://huggingface.co/smainye/sw_finetunned_tune_whisper_small_model_baseline)

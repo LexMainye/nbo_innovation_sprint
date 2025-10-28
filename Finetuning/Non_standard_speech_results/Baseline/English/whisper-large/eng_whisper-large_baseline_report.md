@@ -64,19 +64,14 @@ Training Observations: The model shows consistent improvement until step ~500, a
 - **WER:** 0.089
 - **CER:** 0.040
 
-## 5. Model Availability
-
-The fine-tuned model is publicly available on the Hugging Face Hub:
-- Model: [smainye/eng_finetunned_tune_whisper_large_v3_model_baseline](https://huggingface.co/smainye/eng_finetunned_tune_whisper_large_v3_model_baseline)
-
-## 6. Technical Notes
+## 5. Technical Notes
 
 - Training utilized gradient checkpointing for memory efficiency
 - Best model selection based on WER metric
 - Training completed with model checkpoints saved every 100 steps
 - Used polynomial learning rate decay with warmup (100 steps)
 
-## 7. Recommended next steps
+## 6. Recommended next steps
 
 1. Hyperparameter Optimization
 

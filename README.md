@@ -3,7 +3,11 @@
 
 ![In Progress](https://img.shields.io/badge/Status-In%20Progress-green?style=for-the-badge&logo=wrench&logoColor=white)
 
-This project is dedicated to fine-tuning, evaluating, and running inference on non-standard speech datasets for Kenyan English and Swahili .The primary goal is to develop a fine-tuned model that better understands non-standard speech for Kenyan English and Swahili, achieving a lower Character Error Rate (CER) and Word Error Rate (WER).
+[![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-smainye%2Fmodels-yellow?logo=huggingface)](https://huggingface.co/smainye/models)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=LexMainye/nbo_innovation_sprint)
+
+This project is dedicated to fine-tuning, evaluating, and running inference on non-standard speech datasets for Kenyan English and Swahili on open ai whisper-tiny, whisper-small & whisper-large-v3 models.The primary goal is to develop a fine-tuned model that better understands non-standard speech for Kenyan English and Swahili, achieving a lower Character Error Rate (CER) and Word Error Rate (WER).
 
 ---
 
@@ -35,18 +39,14 @@ This project is associated with the following **partner organisations**:
 
 The repository is organized into the following directories:
 
-- **Dataset Access**: Contains the Jupyter notebooks  accessing and downloading the non-standard speech dataset.
-- **Evaluation**: Includes the notebooks for evaluating the performance of different models on the datasets. This is where you can find the results of my experiments and comparisons between various results for each whisper model.
-- **Finetuning**: This directory holds the code for fine-tuning the Whisper models. It includes the jupyter notebook for accessing  the data, setting up the training process, and running the fine-tuning jobs.
-- **Inference**: Here, you will find the notebook for running inference & results.
+- **Dataset Access**: Contains the Jupyter notebooks  accessing and downloading the non-standard speech dataset hosted by [Centre for Digital Language Inclusion](https://cdl-inclusion.com/) 🌐.
+- **Evaluation**: Includes the jupyter notebooks for evaluating the performance of different models on the datasets. This is where you can find the results of my experiments and comparisons between various results for each whisper model.
+- **Finetuning**: This directory holds the jupyter notebook used for fine-tuning the Whisper models. It includes the jupyter notebook for accessing  the data, setting up the training process, and running the fine-tuning jobs.
+- **Inference**: Here, you will find the Jupyter notebook for running inference & results.
 
 - 📒 Forked repository used for modal tooling:  [Centre for Digital Language Inclusion Modal Tooling Repository](https://github.com/cdl-inclusion/modal_tooling)
 
 ----
 ## Models
 
-**🤗 Hugging Face Repository:** [smainye/models](https://huggingface.co/smainye/models)
-
-Contains fine-tuned models that I intend to use for:
-  - Baseline analysis
-  - Endline analysis
+The fine-tuned models I've worked on will be stored on my hugging face that I've referenced above ☝🏾.

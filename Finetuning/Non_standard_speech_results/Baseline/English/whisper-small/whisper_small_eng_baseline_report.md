@@ -89,12 +89,8 @@ After training, the model with the best validation WER was loaded for final eval
 - **WER:** 0.123
 - **CER:** 0.065
 
-## 4. Current Deployment
 
-This baseline model is available as a starting point for the modelling research:
-[smainye/eng_finetunned_tune_whisper_small_model_baseline](https://huggingface.co/smainye/eng_finetunned_tune_whisper_small_model_baseline)
-
-## 5. Conclusion & Future Directions
+## 4. Conclusion & Future Directions
 
 This baseline experiment successfully demonstrates that even with conservative fine-tuning, significant improvements can be achieved for Kenyan English transcription. The test set WER of 12.3% provides a solid foundation, but I consider this just the beginning.
 
