@@ -1,11 +1,11 @@
 # Run 4 Report: Full Fine-tuning of Whisper-Small on Non-Standard Kenyan English with Constant Warmup - Weight Decay & Early Stopping
 
 
-*This report documents the fourth iteration of my experiments, building upon the previous runs by using a different learning rate scheduler and introducing regularization techniques.*
+*This report documents the fourth iteration of my experiments, building upon the previous runs by using regularization techniques.*
 
 ## 1. Objective
 
-The objective of this experiment was to investigate the impact of a `constant_with_warmup` learning rate scheduler on the fine-tuning performance of the Whisper-small model, while simultaneously implementing regularization and early stopping to control for overfitting.
+The primary objective of this experiment was to investigate the impact of introducing **Weight Decay** and **Early Stopping** to the fine-tuning process. These techniques were implemented to control the significant overfitting observed in previous runs, with the goal of improving generalization and achieving a more stable final model. This run also utilized a `constant_with_warmup` learning rate scheduler.
 
 ## 2. Methodology
 
@@ -112,10 +112,10 @@ The model with the best validation WER (from step 500, loaded at the end of trai
 
 ## 4. Conclusion
 
-This fourth experimental run tested a `constant_with_warmup` scheduler, combined with `weight_decay` and `early_stopping` to control for overfitting.
+This fourth experimental run tested the introduction of `weight_decay` and `early_stopping` to control for overfitting, while also using a `constant_with_warmup` scheduler.
 
-The results are mixed. The `constant_with_warmup` scheduler led to the model achieving its best performance very quickly (by step 500). However, it also proved to be highly prone to overfitting, as the `weight_decay` of 0.01 was insufficient to prevent the validation loss from climbing.
+The results are mixed. The model achieved its best performance very quickly (by step 500), but the `weight_decay` of 0.01 was insufficient to prevent the validation loss from climbing, indicating persistent overfitting.
 
 The use of `early_stopping` with `load_best_model_at_end=True` was **critical**. It successfully identified and saved the best-performing checkpoint (step 500) before the model's generalization degraded further. This saved checkpoint resulted in a strong dev WER of 16.6%, although its test WER (10.9%) did not surpass the simpler schedulers from Run 1 or Run 3.
 
-This run demonstrates that while the scheduler is aggressive, it *can* find a good minimum quickly, but it requires robust regularization and careful checkpointing to be effective.
+This run demonstrates that while the regularization techniques were necessary, the chosen `weight_decay` value was not high enough for this specific scheduler. It confirms that `load_best_model_at_end` is an essential safeguard.
