@@ -102,6 +102,3 @@ The model with the best validation WER was evaluated on the development and test
 This third experimental run, using a `constant_with_warmup` learning rate scheduler, yielded the best results so far, with a **Test WER of 10.8%**. This represents a **12.2% relative improvement over the baseline** and a slight improvement over Run 1.
 
 The `constant_with_warmup` scheduler appears to be a better choice for this fine-tuning task.
-
-### Planned Improvements:
-- Given the success of the new scheduler, the next logical step is to apply it to a larger model, such as `whisper-large-v3`, to see if further improvements can be made.
