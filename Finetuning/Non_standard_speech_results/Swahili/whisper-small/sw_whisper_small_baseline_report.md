@@ -12,7 +12,7 @@ This report details the baseline performance of the `openai/whisper-small` model
 - **Language:** Swahili (`sw`)
 - **Dataset:** `cdli/kenyan_swahili_nonstandard_speech_v0.9`
 - **Output Directory:** `/jupyter_kernel/trained_models/sw_nonstandard_tune_whisper_small_baseline`
-- **Hugging Face Hub Repo:** `smainye/sw_finetunned_tune_whisper_small_model_baseline`
+
 
 ### Finetuning Strategy
 - **Encoder:** Updated (`UPDATE_ENCODER = True`)
