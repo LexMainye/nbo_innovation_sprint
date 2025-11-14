@@ -3,5 +3,11 @@
 **/.DS_Store
 .DS_Store
 
-# ignore pushing_models_to_hf folder
-**/pushing_models_to_hf
+
+
+# ignore pycache files
+**/__pycache__/
+**/*.py[cod]
+__pycache__/
+*.py[cod]   
+

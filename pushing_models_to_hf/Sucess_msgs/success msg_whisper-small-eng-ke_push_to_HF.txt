@@ -1,0 +1,32 @@
+✓ Initialized. View run at https://modal.com/apps/asr-hack-nbo/main/ap-SB8f5VjdHXupmv0a49WBEu
+✓ Created objects.
+├── 🔨 Created mount ~/Documents/Projects/ASR_Sprint/Modelling/nbo_innovation_sprint/Finetuning/push_model_to_hf.py
+├── 🔨 Created function list_models.
+├── 🔨 Created function push_model_to_huggingface.
+├── 🔨 Created function explore_volume.
+└── 🔨 Created function test_model_loading.
+🚀 Starting model upload process...
+📦 Volume: jupyter_kernel
+📁 Model path: trained_models/en_nonstandard_tune_whisper_small_run3/best_model
+🎯 Target repo: smainye/whisper-small-kenyan-english-nonstandard
+🔒 Private: False
+📝 Commit message: Upload fine-tuned Whisper Small model on Kenyan English non-standard speech
+------------------------------------------------------------
+Loading model from: /jupyter_kernel/trained_models/en_nonstandard_tune_whisper_small_run3/best_model
+Loading model and processor...
+✅ Model and processor loaded successfully
+Creating/checking repository: smainye/whisper-small-kenyan-english-nonstandard
+✅ Repository created/verified
+Pushing model to smainye/whisper-small-kenyan-english-nonstandard...
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B                Processing Files (1 / 1)      : 100%|██████████|  967MB /  967MB,  115MB/s
+New Data Upload               : 100%|██████████|  967MB /  967MB,  115MB/s  
+  ...2840td7/model.safetensors: 100%|██████████|  967MB /  967MB            
+✅ Model pushed successfully
+Pushing processor to smainye/whisper-small-kenyan-english-nonstandard...
+
+🎉 Model uploaded successfully!
+🔗 View at: https://huggingface.co/smainye/whisper-small-kenyan-english-nonstandard
+✅ Processor pushed successfully
+✅ Successfully pushed model to https://huggingface.co/smainye/whisper-small-kenyan-english-nonstandard
+Stopping app - local entrypoint completed.
+✓ App completed. View run at https://modal.com/apps/asr-hack-nbo/main/ap-SB8f5VjdHXupmv0a49WBEu
