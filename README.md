@@ -54,5 +54,4 @@ The fine-tuned models I've worked on will be stored on my hugging face that I've
 ----
 
 ## Contact Information
-
-[![Linktree](https://img.shields.io/badge/Linktree-mainye-39E09B?style=flat&logo=linktree&logoColor=white)](https://linktr.ee/mainye)
+[![Linktree](https://img.shields.io/badge/LexMainye-39E09B?style=flat&logo=linktree&logoColor=white)](https://linktr.ee/mainye)
