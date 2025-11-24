@@ -1,7 +1,6 @@
 
 # Fine-tuning Whisper for Non-Standard Kenyan English and Swahili 🇰🇪
 
-![In Progress](https://img.shields.io/badge/Status-In%20Progress-green?style=for-the-badge&logo=wrench&logoColor=white)
 
 [![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-smainye%2Fmodels-yellow?logo=huggingface)](https://huggingface.co/smainye/models)
 
