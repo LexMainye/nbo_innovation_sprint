@@ -1,7 +1,6 @@
 
 # Fine-tuning Whisper for Non-Standard Kenyan English and Swahili 🇰🇪
 
-![In Progress](https://img.shields.io/badge/Status-In%20Progress-green?style=for-the-badge&logo=wrench&logoColor=white)
 
 [![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-smainye%2Fmodels-yellow?logo=huggingface)](https://huggingface.co/smainye/models)
 
@@ -50,3 +49,8 @@ The repository is organized into the following directories:
 ## Models
 
 The fine-tuned models I've worked on will be stored on my hugging face that I've referenced above ☝🏾.
+
+----
+
+## Contact Information
+[![Linktree](https://img.shields.io/badge/LexMainye-39E09B?style=flat&logo=linktree&logoColor=white)](https://linktr.ee/mainye)
