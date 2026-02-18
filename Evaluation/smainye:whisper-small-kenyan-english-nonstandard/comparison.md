@@ -1,44 +1,50 @@
 # Comparison of Development vs. Test Set Results
 
-This analysis compares the performance of the `smainye/whisper-small-kenyan-english-nonstandard` model on the development set (`dev_output.md`) versus the test set (`test_output.md`). While the model shows strong performance on both, there are notable differences in the results when broken down by speaker characteristics.
+This report compares the evaluation results of the `smainye/whisper-small-kenyan-english-nonstandard` model on the **Development** and **Test** splits of the `cdli/kenyan_english_nonstandard_speech_v0.9` dataset.
 
-## Summary of Key Differences
+## Executive Summary
 
-### 1. Overall Performance
+The model performs significantly better on the **Test set** across almost all metrics and categories compared to the Development set.
+*   **Overall WER** improved from **14.9%** (Dev) to **9.8%** (Test).
+*   **Overall CER** improved from **8.0%** (Dev) to **5.0%** (Test).
 
-The model performs significantly **better on the test set** than on the development set across all aggregated severity levels.
+This suggests that the model generalizes well to the test data, or potentially that the test set contains slightly easier examples (e.g., clearer recordings or less severe impairments on average) than the development set.
 
-| Severity | Test Set WER (mean) | Dev Set WER (mean) | Difference |
-| :--- | :---: | :---: | :---: |
-| Mild | 8% | 13% | **-5%** |
-| Moderate | 15% | 23% | **-8%** |
-| Severe | 11% | 16% | **-5%** |
+## 1. Overall Performance Comparison
 
-The overall WER on the development set was **14.9%**, while the per-severity results from the test set suggest its overall WER is likely lower, indicating better generalization to the unseen test data.
+| Metric | Dev Set | Test Set | Absolute Change | Relative Improvement |
+| :--- | :--- | :--- | :--- | :--- |
+| **Overall WER** | 14.9% | 9.8% | -5.1% | ~34% |
+| **Overall CER** | 8.0% | 5.0% | -3.0% | ~37% |
+| **Avg Utterance WER** | 16.4% | 10.6% | -5.8% | ~35% |
+| **Avg Utterance CER** | 9.3% | 5.4% | -3.9% | ~42% |
 
-### 2. Performance Trend by Severity
+## 2. Analysis by Severity
 
-A key anomaly is present in **both sets**: performance on speakers with "severe" impairment is better than on those with "moderate" impairment.
+The model consistently performs better on the Test set across all severity levels.
 
-*   **Dev Set:** `mild` (13%) < `severe` (16%) < `moderate` (23%)
-*   **Test Set:** `mild` (8%) < `severe` (11%) < `moderate` (15%)
+| Severity | Dev WER | Test WER | Dev CER | Test CER | Trend |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Mild** | 0.13 | 0.08 | 0.06 | 0.04 | ✅ Improved |
+| **Moderate** | 0.23 | 0.15 | 0.14 | 0.09 | ✅ Improved |
+| **Severe** | 0.16 | 0.11 | 0.09 | 0.06 | ✅ Improved |
 
-This consistent pattern suggests that the "severity" label may not perfectly correlate with the difficulty of speech transcription for this model, or that there is high variance in speaker clarity within these categories.
+*   **Observation:** The relative hierarchy remains similar: "Mild" is essentially the easiest, followed by "Severe", with "Moderate" actually showing the highest error rates in both sets (possibly due to specific speaker characteristics in the "Moderate" bucket).
 
-### 3. Performance Inversion by Etiology
+## 3. Analysis by Etiology
 
-The most striking difference is the **complete inversion of performance** for certain etiologies between the two datasets.
+Performance varies significantly by etiology, likely due to small sample sizes (some etiologies have only 1-2 speakers).
 
-| Etiology | Test Set WER (mean) | Dev Set WER (mean) | Performance Rank (Test) | Performance Rank (Dev) |
-|:---|:---:|:---:|:---|:---|
-| **Parkinson’s Disease** | **7%** | **26%** | **Best** | **Worst** |
-| **Multiple Sclerosis (MS)** | **17%** | **10%** | **Worst** | **Best** |
-| Cerebral Palsy | 12% | 17% | Mid-tier | Mid-tier |
-| Neurological/Neurodev. | 10% | 17% | Good | Mid-tier |
+| Etiology | Dev WER | Test WER | Change |
+| :--- | :--- | :--- | :--- |
+| **Cerebral Palsy** | 0.17 | 0.12 | ✅ Improved |
+| **Neuro. Disorder** | 0.17 | 0.10 | ✅ Improved |
+| **Parkinson’s** | 0.26 | 0.07 | ✅ **Major Improvement** |
+| **Multiple Sclerosis**| 0.10 | 0.17 | ❌ Regressed |
 
-**Explanation:**
-This dramatic shift highlights that the model's performance is highly sensitive to the individual speaker, not just the general etiology. For example, the speaker with Parkinson's in the test set (`KES021`, 7% WER) was transcribed much more accurately than the speaker with the same condition in the dev set (`KES020`, 26% WER). The opposite is true for Multiple Sclerosis. This indicates that with a small number of speakers, aggregating by etiology can be misleading and performance is more speaker-dependent.
+*   **Parkinson's Disease:** Shows the most dramatic improvement (26% WER -> 7% WER). This could be due to speaker-specific differences; the speaker in the test set might have milder symptoms or clearer articulation than the one in the dev set.
+*   **Multiple Sclerosis:** This is the only category where performance degraded (10% WER -> 17% WER). However, with very low speaker counts (often N=1), this is likely a speaker-specific variation rather than a general trend for the etiology.
 
 ## Conclusion
 
-While the model generalizes well to the test set, achieving even lower error rates than on the dev set, the evaluation reveals significant performance variance based on the specific speaker. The consistent "severe better than moderate" trend and the inversion of performance for Parkinson's and MS highlight the need for a more extensive and diverse set of speakers for a more stable and reliable evaluation of model performance across different speech impairment conditions.
+The evaluation results on the Test set are highly encouraging, showing a roughly **35% relative reduction in error rates** compared to the Development set. The model demonstrates robust performance, particularly on "Mild" and "Severe" impairments, though high variance in specific etiologies (like Parkinson's vs. MS) highlights the impact of individual speaker characteristics in small-data regimes.
