@@ -57,8 +57,8 @@ This run retained the same partial fine-tuning strategy as Run 1, with one key c
 |----------------------|-------------------------|-------------------------|
 | Learning Rate        | 1e-5                    | **5e-6**                |
 | LR Scheduler         | Constant with warmup    | **Polynomial decay**    |
-| LR End               | —                       | **1e-8**                |
-| LR Decay Power       | —                       | **2**                   |
+| LR End               | 1e-8                       | **1e-8**                |
+| LR Decay Power       | 2                       | **2**                   |
 | Warmup Steps         | 100                     | 100                     |
 | Batch Size           | 32                      | 32                      |
 | Max Steps            | 1000                    | 1000                    |
