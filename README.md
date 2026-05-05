@@ -8,18 +8,6 @@
 
 This project is dedicated to fine-tuning, evaluating, and running inference on non-standard speech datasets for Kenyan English and Swahili on open ai whisper-tiny, whisper-small & whisper-large-v3 models.The primary goal is to develop a fine-tuned model that better understands non-standard speech for Kenyan English and Swahili, achieving a lower Character Error Rate (CER) and Word Error Rate (WER).
 
----
-
-## Associated Organisations 🤝
-
-This project is associated with the following **partner organisations**:
-
-* [Centre for Digital Language Inclusion](https://cdl-inclusion.com/) 🌐
-* [Senses Hub](https://senseshub.vision/) 🇰🇪
-* [iLabAfrica at Strathmore University](https://ilabafrica.strathmore.edu/) 🇰🇪
-* [University College London](https://www.ucl.ac.uk/) 🇬🇧
-* [Global Disability Innovation Hub](https://www.disabilityinnovation.com/) 🇬🇧
-
 
 ---
 
@@ -54,3 +42,6 @@ The fine-tuned models I've worked on will be stored on my hugging face that I've
 
 ## Contact Information
 [![Linktree](https://img.shields.io/badge/LexMainye-39E09B?style=flat&logo=linktree&logoColor=white)](https://linktr.ee/mainye)
+
+## Donations
+[![Buy Me A Coffee](https://img.shields.io/badge/LexMainye-39E09B?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/lexmainye)
