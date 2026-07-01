@@ -119,9 +119,9 @@ def push_model_to_huggingface(
 
 @app.local_entrypoint()
 def main(
-    model_path: str = "trained_models/sw_nonstandard_tune_whisper_small_run3/best_model",
-    repo_id: str = "smainye/whisper-small-kenyan-swahili-nonstandard",
-    commit_message: str = "Upload fine-tuned Whisper Small model on Kenyan Swahili non-standard speech",
+    model_path: str = "trained_models/whisper-small-kenyan-english-nonstandard-robust_v1_run3/best_model",
+    repo_id: str = "smainye/whisper-small-kenyan-english-nonstandard-v2",
+    commit_message: str = "Upload a new fine-tuned version of Whisper Small model on Kenyan English non-standard speech",
     private: bool = False,
 ):
     """
@@ -282,7 +282,7 @@ def test_model_loading(model_path: str):
 
 @app.local_entrypoint()
 def test_model(
-    model_path: str = "trained_models/sw_nonstandard_tune_whisper_small_run3/best_model"
+    model_path: str = "trained_models/whisper-small-kenyan-english-nonstandard-robust_v1_run3/best_model"
 ):
     """Test if a specific model can be loaded"""
     success = test_model_loading.remote(model_path)
